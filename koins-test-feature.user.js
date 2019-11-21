@@ -6,6 +6,8 @@
 // @author       Kasper
 // @match        https://dev.1024.info/*/studio/task/*
 // @grant        none
+// @downloadURL  https://github.com/Kasp42/koins-test-feature/raw/master/koins-test-feature.user.js
+// @updateURL    https://github.com/Kasp42/koins-test-feature/raw/master/koins-test-feature.user.js
 // ==/UserScript==
 
 (function() {
