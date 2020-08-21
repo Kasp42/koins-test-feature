@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Koins Test Feature
 // @namespace    https://dev.1024.info/
-// @version      0.4
+// @version      0.5
 // @description  Hide successful and useless test in task.
 // @author       Kasper
 // @match        https://dev.1024.info/*/studio/task/*
@@ -16,7 +16,6 @@
 let URL_LOCAL_TRUNK = GM_getValue('URL_LOCAL_TRUNK','');
 let URL_LOCAL_STABLE = GM_getValue('URL_LOCAL_STABLE','');
 let URL_LOCAL_STUDIO = GM_getValue('URL_LOCAL_STUDIO','');
-
 
 (function() {
   'use strict';
@@ -123,7 +122,6 @@ let URL_LOCAL_STUDIO = GM_getValue('URL_LOCAL_STUDIO','');
     $('#studio-task-view-test tr.data').each(function()
     {
       var text_log = $(this).find('td:eq(8)').text();
-      console.log(text_log.indexOf('Error communicating with the remote browser. It may have died.'));
       if(
         $(this).hasClass('test-status-delete') ||
         $(this).find('td:eq(7) a').attr('title') === 'yes (50)' ||
